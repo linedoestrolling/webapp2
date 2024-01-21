@@ -74,6 +74,11 @@ $(document).mouseup(function () {
     isMouseDown = false;
 });
 
+function resetHours() {
+    table.find(".selected").removeClass("selected"); // deselect everything
+    return;
+}
+
 
 function parseAvailability() {
     var hours_available = [];
